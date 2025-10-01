@@ -5,7 +5,11 @@ Projektion mapping er en teknik, der bruger software til at projicere billeder e
 **Eksempler:** [
 The Coolest Examples of Projection Mapping (YouTube)](https://www.youtube.com/watch?v=PKMCB5v8pt0)
 
+*Se denne video hvis du ikke forstår guiden under, den viser mange af trinene visuelt:*
+
 **Video-guide:** [Projektion Mapping med TouchDesigner (YouTube)](https://www.youtube.com/watch?v=E1YMSPLVws0)
+
+
 
 ## 1. Software:
 Vi anbefaler at bruge Touchdesigner, et profesionnelt program til visuel kunst man kan bruge til at lave visuel kunst live, og som også er god til projection mapping. Der er en gratis version som kan nærmest det samme som den professionelle, så det fungerer super godt!
@@ -47,5 +51,8 @@ Vi anbefaler at bruge Touchdesigner, et profesionnelt program til visuel kunst m
 ![alt text](figur.png)
 
 ## 5. Få grafik på mappingen
+1. klik og træk *movie file in* boksen over i den boks der hedder "texture" på den figur du gerne vil have bliver til billedet. (hvis du er i tvivl så se video guiden, link i toppen) 
+![alt text](drag.png)
+2. Nu burde alt virke, hvis du vil tilføje flere projektorer skal du tilføje et nyt kantan mapper objekt.
 
 
