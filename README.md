@@ -1,38 +1,58 @@
 # Guide til Projektion Mapping
 
-Projektion mapping er en teknik, der bruger software til at projicere billeder eller videoer på ujævne overflader, hvilket forvandler objekter til dynamiske visuelle displays.
+Projektion mapping er en teknik, der bruger software til at projicere billeder eller videoer på ujævne overflader, hvilket forvandler objekter til dynamiske visuelle displays. I DD Lab har vi en masse projektorer, som du kan bruge til dit projekt, hvis du har lyst til at arbejde med visuel kunst, VJ'ing, eller skal bruge en fed feature til et projekt!
 
-<div align="center">
+**Eksempler:** [
+The Coolest Examples of Projection Mapping (YouTube)](https://www.youtube.com/watch?v=PKMCB5v8pt0)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/PKMCB5v8pt0?si=aMCVa8xmkMf4ox3R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-</div>
+*Se denne video hvis du ikke forstår guiden under, den viser mange af trinene visuelt:*
 
 **Video-guide:** [Projektion Mapping med TouchDesigner (YouTube)](https://www.youtube.com/watch?v=E1YMSPLVws0)
 
-## 1. Download TouchDesigner (Gratis Version)
+
+
+## 1. Software:
+Vi anbefaler at bruge Touchdesigner, et profesionnelt program til visuel kunst man kan bruge til at lave visuel kunst live, og som også er god til projection mapping. Der er en gratis version som kan nærmest det samme som den professionelle, så det fungerer super godt!
 
 1. Gå til [TouchDesigner Download-side](https://derivative.ca/download).
-2. Klik på **Download** under den gratis ikke-kommercielle licens.
+2. Klik på **Windows Download** eller **macOS Download**
 3. Installer TouchDesigner på din computer.
+4. Åben programmet, og opret en gratis konto
 
-## 2. Importer en filmfil
+## 2. Importer video/billede
+1. Dobbeltklik på baggrunden eller klik på "+" for at tilføje en ny 'operator'
+![Add](add.png)
+2. I den Lila menu "TOP" vælg "Movie File In" (også selvom det er et billede du vil projektere)
+![Eksempel på Movie File In-](movie.png)
+3. Klik på Movie File In boxen (bananen) og vælg din videofil under "File"
+![Movie File In settings](movie2.png)
 
-1. Åbn TouchDesigner.
-2. Træk en **Movie File In TOP** fra venstre panel ind i dit netværk.
-3. Klik på Movie File In-noden og vælg din videofil.
+## 3. Projektor
+1. tilslut en projektor med hdmi
+2. gå ind i din computers skærm indstillinger og sørg for at den ikke *mirror* din skærm men er en ekstern skærm. Og sørg for at din computer er 0, og din(e) projektor(er) er 1 (2,3,4, osv.)
 
-## 3. Brug Kantan Mapper til projektion mapping
+## 4. Brug Kantan Mapper til projektion mapping
 
-1. Højreklik i netværket og tilføj en **Kantan Mapper**-node.
-2. Forbind output fra din Movie File In TOP til input på Kantan Mapper.
-3. Dobbeltklik på Kantan Mapper for at åbne dens interface.
-4. Brug værktøjerne til at tegne former over din projektionsoverflade.
-5. Tildel din video til formerne for mapping.
+1. Ude til venstre i *Palette* vælg *mapping* og derefter -> **KantanMapper**
+![Kantan Mapper palette](kantan.png)
+2. klik og træk den ind i arbejdsområdet
+3. klik på kantan-mapper boksen
+4. Klik på *Open Kantan Window* **Pulse**
+![alt text](kantan2.png)
+5. klik på window options og indstil:
+- Opening size: FILL
+- Borders: OFF
+- Always on top: ON
+- I monitor slideren, sæt den til 0, 1 eller 2 alt efter hvor mange skærme du har, og hvordan dine skærme er opsat. Du kan åbne display indstillinger på din computer og se nogle ting, men nogle gange skal man prøve sig lidt frem med hvilke monitor der er hvilken projektor
+- når du har indstillet klikker du på **Toggle Output** tilbage i kantan window menuen. Hvis alt er indstillet rigtigt projektoren blive sort og vise din mus som to et orange kryds mens du kører den rundt i Kantan kanvaset.
 
-## 4. Forhåndsvis og juster
+6. vælg enten quad eller freeform under tools for at tegne figurer på kanvassert, kig over på projektorens output for at få figuren til at passe med dit objekts omrids.
+![alt text](tools.png)
+![alt text](figur.png)
 
-1. Forbind Kantan Mappers output til en **Window COMP** for at forhåndsvise.
-2. Juster former og videoplacering efter behov.
-3. Projekter på din fysiske overflade.
+## 5. Få grafik på mappingen
+1. klik og træk *movie file in* boksen over i den boks der hedder "texture" på den figur du gerne vil have bliver til billedet. (hvis du er i tvivl så se video guiden, link i toppen) 
+![alt text](drag.png)
+2. Nu burde alt virke, hvis du vil tilføje flere projektorer skal du tilføje et nyt kantan mapper objekt.
+
 
